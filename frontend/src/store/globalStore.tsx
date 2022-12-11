@@ -1,15 +1,12 @@
 import { observable, action, makeObservable } from "mobx";
-import Cookie from "mobx-cookie";
 
 class GlobalStore {
-  cookie = new Cookie("isAuthorized");
   public redirect = false;
   public authenticated = false;
   constructor() {
     makeObservable(this, {
       redirect: observable,
       updateRedirect: action.bound,
-      cookie: observable,
       authenticated: observable,
       updateAuthenticated: action.bound,
     });

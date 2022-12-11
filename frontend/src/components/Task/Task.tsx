@@ -11,8 +11,9 @@ const Task = (props: TaskProps) => {
 
   const onChangeCheckbox = async (e) => {
     props.onChangeTaskStatus(id, e.target.checked);
-    apiMethods.changeCheckbox(id, e.target.checked);
-    props.getTasks();
+    apiMethods.changeCheckbox(id, e.target.checked).then(() => {
+      props.getTasks();
+    });
   };
 
   const onDelete = async () => {
