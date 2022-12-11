@@ -1,0 +1,33 @@
+.logoutButton {
+  width: 80px;
+  height: 30px;
+  display: flex;
+  align-self: center;
+  float: right;
+  position: relative;
+  margin-bottom: 15px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  display: flex;
+  background-color: #e74c3c;
+  box-shadow: 0px 5px 0px 0px #ce3323;
+  border-radius: 5px;
+  padding: 15px 25px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  cursor: pointer;
+  padding: 4px 17px;
+  font-size: 15px;
+}
+
+.logoutButton:hover {
+  cursor: pointer;
+  background-color: #ff6656;
+}
+
+.router {
+  height: 80px;
+}

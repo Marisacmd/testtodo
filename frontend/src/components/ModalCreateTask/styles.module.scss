@@ -1,0 +1,100 @@
+.table-buttons {
+  display: flex;
+  flex-direction: row;
+}
+
+.leftBlock {
+  width: 50%;
+  display: flex;
+}
+
+.rightBlock {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.background__modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  opacity: 0.4;
+  z-index: 100;
+  transform: scale(0);
+}
+
+.background__modal--active {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  transform: scale(1);
+}
+
+.modal {
+  position: fixed;
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px !important;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 500px;
+  background: antiquewhite;
+  z-index: 1000;
+  overflow-y: hidden;
+  word-break: break-all;
+}
+
+.modal__title {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin-bottom: 26px;
+}
+
+.modal__body {
+  display: flex;
+  flex-wrap: wrap;
+  overflow: auto;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.heading {
+  font-size: 22px;
+}
+
+.inputField {
+  margin: 20px;
+  height: 300px;
+}
+
+.createButton {
+  background-color: #2ecc71;
+  box-shadow: 0px 5px 0px 0px #15b358;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  left: 35%;
+  cursor: pointer;
+}
+
+.createButton:hover {
+  background-color: #48e68b;
+}

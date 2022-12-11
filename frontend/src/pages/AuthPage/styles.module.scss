@@ -1,0 +1,62 @@
+.logInBlock {
+  height: 300px;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.input {
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #333;
+  box-shadow: 0 1px 1px rgba(111, 197, 236, 0.49);
+  width: 200px;
+  height: 40px;
+  color: #333;
+  display: block;
+  letter-spacing: 2px;
+  line-height: 50px;
+  padding: 0 50px 0 20px;
+  text-align: left;
+  transform-style: preserve-3d;
+  transform-origin: 50% 0%;
+  transition: transform 300ms;
+  -webkit-backface-visibility: hidden;
+}
+
+.homePage {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.heading {
+  display: flex;
+  font-size: 36px;
+  align-self: center;
+  margin-bottom: 30px;
+}
+
+.logInButton {
+  background-color: #2ecc71;
+  box-shadow: 0px 5px 0px 0px #15b358;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.logInButton:hover {
+  background-color: #48e68b;
+  cursor: pointer;
+}

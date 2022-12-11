@@ -1,0 +1,93 @@
+.mainScreen {
+  display: flex;
+  flex-direction: column;
+}
+
+.taskItem {
+  min-height: 70px;
+  //display: flex;
+  align-items: center;
+  border-bottom: 1px solid #f0eeee;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  hyphens: auto;
+  flex-direction: row;
+  display: flex;
+}
+
+.tasksList {
+  width: 900px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+
+.buttonsBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.addButton {
+  background-color: #2ecc71;
+  box-shadow: 0px 5px 0px 0px #15b358;
+  border-radius: 5px;
+  padding: 15px 25px;
+  font-size: 22px;
+  text-decoration: none;
+  margin: 20px;
+  color: #fff;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 100px;
+  cursor: pointer;
+}
+
+.addButton:hover {
+  background-color: #48e68b;
+}
+
+.statusSelect {
+  background-color: #fff;
+  border: 1px solid #333;
+  box-shadow: 0 1px 1px rgba(111, 197, 236, 0.49);
+  width: 200px;
+  height: 40px;
+  color: #333;
+  display: block;
+  letter-spacing: 2px;
+  line-height: 50px;
+  padding: 0 50px 0 20px;
+  text-align: left;
+  transform-style: preserve-3d;
+  transform-origin: 50% 0%;
+  transition: transform 300ms;
+  -webkit-backface-visibility: hidden;
+  cursor: pointer;
+}
+
+.deleteButtonColumn {
+  height: 100%;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  width: 10%;
+}
+
+.taskInfoColumn {
+  width: 90%;
+  display: flex;
+}
+
+input {
+  cursor: pointer;
+}
+
+.deleteButton {
+  cursor: pointer;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+}
